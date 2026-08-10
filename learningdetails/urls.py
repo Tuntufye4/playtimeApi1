@@ -5,4 +5,4 @@ from .views import LearningDetailsViewSet
 router = DefaultRouter()
 router.register(r'', LearningDetailsViewSet, basename='learningdetails')             
 
-urlpatterns = router.urls         
+urlpatterns = router.urls            

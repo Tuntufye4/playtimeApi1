@@ -10,7 +10,7 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 
 from .models import LearningDetails
-from .serializers import LearningDetailsSerializer
+from .serializers import LearningDetailsSerializer   
 
 
 class LearningDetailsViewSet(viewsets.ModelViewSet):

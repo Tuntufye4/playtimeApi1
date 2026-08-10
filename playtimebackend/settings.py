@@ -29,10 +29,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',  
      'corsheaders',    
     'rest_framework',
-
+    'testdetailsfr',    
     'learningdetails',
     'learningdetailsfr',
-    'testdetails',       
+    'testdetails',            
     'games', 
     'users',            
 ]

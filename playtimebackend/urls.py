@@ -19,8 +19,12 @@ urlpatterns = [
 
     path(
         'api/testdetails/',
-        include('testdetails.urls')
+        include('testdetails.urls')     
     ),
+    path(
+            'api/testdetailsfr/',         
+            include('testdetailsfr.urls')
+        ),
     path(    
             'api/games/',
             include('games.urls')
@@ -33,4 +37,4 @@ if settings.DEBUG:
     urlpatterns += static(
         settings.MEDIA_URL,
         document_root=settings.MEDIA_ROOT
-    )
+    )    

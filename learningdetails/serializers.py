@@ -7,7 +7,7 @@ class LearningDetailsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = LearningDetails
-
+   
         fields = [
             "id",
             "input",    
