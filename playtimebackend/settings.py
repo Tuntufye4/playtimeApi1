@@ -15,8 +15,8 @@ SECRET_KEY = 'django-insecure-b=np6$x@3ac-+a=m@$fy%4n&dnq_!3a20!8sw5!5s#%@(!!sk7
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
-
+ALLOWED_HOSTS = ['playtimeapi1.onrender.com']
+   
 
 # Application definition
 
@@ -27,7 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',  
-
+     'corsheaders',    
     'rest_framework',
 
     'learningdetails',
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
 
 
 MIDDLEWARE = [
+      'corsheaders.middleware.CorsMiddleware',    
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -82,7 +83,7 @@ TEMPLATES = [
 ]
 
 
-WSGI_APPLICATION = 'playtimeapi.wsgi.application'
+WSGI_APPLICATION = 'playtimebackend.wsgi.application'
 
 
 # Database
@@ -144,4 +145,4 @@ MEDIA_ROOT = BASE_DIR / 'speech'
 
 # Default primary key field type
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'          
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'             
