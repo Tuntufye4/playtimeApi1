@@ -31,7 +31,8 @@ INSTALLED_APPS = [
     'rest_framework',
 
     'learningdetails',
-    'testdetails',  
+    'learningdetailsfr',
+    'testdetails',       
     'games', 
     'users',            
 ]

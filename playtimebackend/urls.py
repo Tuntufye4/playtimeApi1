@@ -12,6 +12,11 @@ urlpatterns = [
         include('learningdetails.urls')
     ),
 
+    path(       
+            'api/learningdetailsfr/',
+            include('learningdetailsfr.urls')
+        ),
+
     path(
         'api/testdetails/',
         include('testdetails.urls')
