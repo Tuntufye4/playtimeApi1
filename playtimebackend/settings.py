@@ -9,7 +9,7 @@ from pathlib import Path
 # Build paths inside the project
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
+   
 # Security
 SECRET_KEY = 'django-insecure-b=np6$x@3ac-+a=m@$fy%4n&dnq_!3a20!8sw5!5s#%@(!!sk7'
 
@@ -62,9 +62,9 @@ AUTH_USER_MODEL = 'users.User'
 #}      
 
 
-ROOT_URLCONF = 'playtimeapi.urls'
+ROOT_URLCONF = 'playtimebackend.urls'
 
-
+         
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -145,4 +145,4 @@ MEDIA_ROOT = BASE_DIR / 'speech'
 
 # Default primary key field type
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'             
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'                
