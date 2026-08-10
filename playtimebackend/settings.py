@@ -15,8 +15,8 @@ SECRET_KEY = 'django-insecure-b=np6$x@3ac-+a=m@$fy%4n&dnq_!3a20!8sw5!5s#%@(!!sk7
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['playtimeapi1.onrender.com']
-   
+ALLOWED_HOSTS = ['playtimeapi.onrender.com']
+          
 
 # Application definition
 
